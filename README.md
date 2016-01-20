@@ -10,7 +10,7 @@
 ## User Stories 
 
 ## Front-End WireFrames
-
+![wireframes](/images/wireframes.pdf)
 
 
 ## List of Technologies Used
