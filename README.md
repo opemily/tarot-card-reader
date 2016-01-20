@@ -4,7 +4,8 @@
 
 ## App Description
 *Tell your fortune with this electronic Tarot Card Reader*
- Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and Angular Javascript!
+
+Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and Angular Javascript!
 
 
 ## User Stories 
