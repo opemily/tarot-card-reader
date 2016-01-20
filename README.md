@@ -1,6 +1,6 @@
 # Tarot Card Reader
 
-![fortune teller](/imgs/misscleo.gif)
+![fortune teller](/images/misscleo.gif)
 
 ## App Description
 ###Tell your fortune with this electronic Tarot Card Reader
