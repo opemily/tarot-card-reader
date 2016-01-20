@@ -1,11 +1,22 @@
 # Tarot Card Reader
 
--> ![fortune teller](/imgs/misscleo.gif) <-
+ ![fortune teller](/imgs/misscleo.gif)
 
 ## App Description
 *Tell your fortune with this electronic Tarot Card Reader*
 
 Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and Angular Javascript!
+
+* User will ask the cards a question that will appear at the top of the screen during the reading
+* Cards will shuffle and appear in layout when the user submits the question
+* User can learn about the meaning of the placement of the cards by clicking on the title.
+* When user clicks on a card, the card is revealed and a modal describing the card's meaning is revealed to the user.
+
+### Optional User Stories (Non MVP)
+
+* At the end of the reading a user can rate the reading.
+* A user can login and see a history of their readings
+* A user can email the reading to himself/herself or a third party
 
 
 ## User Stories 
