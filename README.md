@@ -42,6 +42,12 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ** Illustrations from the Rider-Waite Tarot Deck® reproduced by permission of U.S. Games Systems, Inc., Stamford, CT 06902 USA. Copyright (c)1910 by U.S. Games Systems, Inc. Further reproduction prohibited. The Rider-Waite Tarot Deck® is a registered trademark of U.S. Games Systems, Inc. **
 
+
+Font: DS_Mysticora
+Version: 1.0 - September 2001
+�copyright - 2001 - Daniel Steven Smith 
+
+
 Back Card - ["The World Of Tarot"](https://theworldoftarot.wordpress.com/2014/10/10/review-tarot-for-cats/)
 
 Tarot Cards - ["Tarot Card Images"](http://blog.goo.ne.jp/valet_de_coupe/e/cb9361a10db2c819ee498cf250f66813)
