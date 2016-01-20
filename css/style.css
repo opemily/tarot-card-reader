@@ -1,0 +1,352 @@
+/* ///// Global ///// */
+
+h1{
+
+}
+
+.hidden{
+
+  display: none;
+}
+
+.card-position {
+
+}
+
+/* ///// Querent Question ///// */
+
+/* ///// Modal ///// */
+
+#card-image {
+
+}
+
+.card-name {
+
+}
+
+.card-meaning {
+
+}
+
+/* ///// Cards ///// */
+
+.card {
+
+}
+
+.aceCups {
+  background-image: url(../images/cards/aceOfCups.jpg);
+}
+
+.twoCups {
+  background-image: url(../images/cards/twoOfCups.jpg);
+}
+
+.threeCups {
+  background-image: url(../images/cards/threeOfCups.jpg);
+}
+
+.fourCups {
+  background-image: url(../images/cards/fourOfCups.jpg);
+}
+
+.fiveCups {
+  background-image: url(../images/cards/fiveOfCups.jpg);
+}
+
+.sixCups {
+  background-image: url(../images/cards/sixOfCups.jpg);
+}
+
+.sevenCups {
+  background-image: url(../images/cards/sevenOfCups.jpg);
+}
+
+.eightCups {
+  background-image: url(../images/cards/eightOfCups.jpg);
+}
+
+.nineCups {
+  background-image: url(../images/cards/nineOfCups.jpg);
+}
+
+.tenCups {
+  background-image: url(../images/cards/tenOfCups.jpg);
+}
+
+.pageCups {
+  background-image: url(../images/cards/pageOfCups.jpg);
+}
+
+.knightCups {
+  background-image: url(../images/cards/knightOfCups.jpg);
+}
+
+.queenCups {
+  background-image: url(../images/cards/queenOfCups.jpg);
+}
+
+.kingCups {
+  background-image: url(../images/cards/kingOfCups.jpg);
+}
+
+.acePentacles {
+  background-image: url(../images/cards/aceOfPentacles.jpg);
+}
+
+.twoPentacles {
+  background-image: url(../images/cards/twoOfPentacles.jpg);
+}
+
+.threePentacles {
+  background-image: url(../images/cards/threeOfPentacles.jpg);
+}
+
+.fourPentacles {
+  background-image: url(../images/cards/fourOfPentacles.jpg);
+}
+
+.fivePentacles {
+  background-image: url(../images/cards/fiveOfPentacles.jpg);
+}
+
+.sixPentacles {
+  background-image: url(../images/cards/sixOfPentacles.jpg);
+}
+
+.sevenPentacles {
+  background-image: url(../images/cards/sevenOfPentacles.jpg);
+}
+
+.eightPentacles {
+  background-image: url(../images/cards/eightOfPentacles.jpg);
+}
+
+.ninePentacles {
+  background-image: url(../images/cards/nineOfPentacles.jpg);
+}
+
+.tenPentacles {
+  background-image: url(../images/cards/tenOfPentacles.jpg);
+}
+
+.pagePentacles {
+  background-image: url(../images/cards/pageOfPentacles.jpg);
+}
+
+.knightPentacles {
+  background-image: url(../images/cards/knightOfPentacles.jpg);
+}
+
+.queenPentacles {
+  background-image: url(../images/cards/queenOfPentacles.jpg);
+}
+
+.kingPentacles {
+  background-image: url(../images/cards/kingOfPentacles.jpg);
+}
+
+.aceSwords {
+  background-image: url(../images/cards/aceOfSwords.jpg);
+}
+
+.twoSwords {
+  background-image: url(../images/cards/twoOfSwords.jpg);
+}
+
+.threeSwords {
+  background-image: url(../images/cards/threeOfSwords.jpg);
+}
+
+.fourSwords {
+  background-image: url(../images/cards/fourOfSwords.jpg);
+}
+
+.fiveSwords {
+  background-image: url(../images/cards/fiveOfSwords.jpg);
+}
+
+.sixSwords {
+  background-image: url(../images/cards/sixOfSwords.jpg);
+}
+
+.sevenSwords {
+  background-image: url(../images/cards/sevenOfSwords.jpg);
+}
+
+.eightSwords {
+  background-image: url(../images/cards/eightOfSwords.jpg);
+}
+
+.nineSwords {
+  background-image: url(../images/cards/nineOfSwords.jpg);
+}
+
+.tenSwords {
+  background-image: url(../images/cards/tenOfSwords.jpg);
+}
+
+.pageSwords {
+  background-image: url(../images/cards/pageOfSwords.jpg);
+}
+
+.knightSwords {
+  background-image: url(../images/cards/knightOfSwords.jpg);
+}
+
+.queenSwords {
+  background-image: url(../images/cards/queenOfSwords.jpg);
+}
+
+.kingSwords {
+  background-image: url(../images/cards/kingOfSwords.jpg);
+}
+
+.aceWands {
+  background-image: url(../images/cards/aceOfWands.jpg);
+}
+
+.twoWands {
+  background-image: url(../images/cards/twoOfWands.jpg);
+}
+
+.threeWands {
+  background-image: url(../images/cards/threeOfWands.jpg);
+}
+
+.fourWands {
+  background-image: url(../images/cards/fourOfWands.jpg);
+}
+
+.fiveWands {
+  background-image: url(../images/cards/fiveOfWands.jpg);
+}
+
+.sixWands {
+  background-image: url(../images/cards/sixOfWands.jpg);
+}
+
+.sevenWands {
+  background-image: url(../images/cards/sevenOfWands.jpg);
+}
+
+.eightWands {
+  background-image: url(../images/cards/eightOfWands.jpg);
+}
+
+.nineWands {
+  background-image: url(../images/cards/nineOfWands.jpg);
+}
+
+.tenWands {
+  background-image: url(../images/cards/tenOfWands.jpg);
+}
+
+.pageWands{
+  background-image: url(../images/cards/pageOfWands.jpg);
+}
+
+.knightWands {
+  background-image: url(../images/cards/knightOfWands.jpg);
+}
+
+.queenWands {
+  background-image: url(../images/cards/queenOfWands.jpg);
+}
+
+.kingWands {
+  background-image: url(../images/cards/kingOfWands.jpg);
+}
+
+.fool {
+  background-image: url(../images/cards/theFool.jpg);
+}
+
+.magician {
+  background-image: url(../images/cards/theMagician.jpg);
+}
+
+.highPriestess {
+  background-image: url(../images/cards/theHighPriestess.jpg);
+}
+
+.empress {
+  background-image: url(../images/cards/theEmpress.jpg);
+}
+
+.emperor {
+  background-image: url(../images/cards/theEmperor.jpg);
+}
+
+.priest {
+  background-image: url(../images/cards/thePriest.jpg);
+}
+
+.lovers {
+  background-image: url(../images/cards/theLovers.jpg);
+}
+
+.chariot {
+  background-image: url(../images/cards/thechariot.jpg);
+}
+
+.strength {
+  background-image: url(../images/cards/thechariot.jpg);
+}
+
+.hermit {
+  background-image: url(../images/cards/theHermit.jpg);
+}
+
+.wheelOfFortune {
+  background-image: url(../images/cards/wheelOfFortune.jpg);
+}
+
+.justice {
+  background-image: url(../images/cards/justice.jpg);
+}
+
+.hangedMan {
+  background-image: url(../images/cards/theHangedMan.jpg);
+}
+
+.death {
+  background-image: url(../images/cards/death.jpg);
+}
+
+.temperance {
+  background-image: url(../images/cards/temperance.jpg);
+}
+
+.devil {
+  background-image: url(../images/cards/theDevil.jpg);
+}
+
+.tower {
+  background-image: url(../images/cards/theTower.jpg);
+}
+
+.star {
+  background-image: url(../images/cards/theStar.jpg);
+}
+
+.moon {
+  background-image: url(../images/cards/theMoon.jpg);
+}
+
+.sun {
+  background-image: url(../images/cards/theSun.jpg);
+}
+
+.judgement {
+  background-image: url(../images/cards/judgement.jpg);
+}
+
+.world {
+  background-image: url(../images/cards/theWorld.jpg);
+}
+
+.coverd {
+  background-image: url(../images/cards/cardBack.jpg);
+}
