@@ -1,6 +1,6 @@
 # Tarot Card Reader
 
--> ![fortune teller](/imgs/missCleo.gif) <-
+-> ![fortune teller](/imgs/misscleo.gif) <-
 
 ## App Description
 *Tell your fortune with this electronic Tarot Card Reader*
@@ -10,7 +10,7 @@
 ## User Stories 
 
 ## Front-End WireFrames
-![wireframes](/imgs/wireframes.jpg)
+![wireframes](/imgs/wireframe.jpg)
 
 
 ## List of Technologies Used
