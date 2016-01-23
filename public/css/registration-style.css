@@ -1,0 +1,32 @@
+/* ///// Global ///// */
+
+body {
+
+  background: url("/imgs/fortune-teller-background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+/* ///// Registration Form ///// */
+
+.registration {
+
+  width: 40%;
+  height: 300px;
+  margin: 20% auto;
+  background-color: rgba(210,161,125,.7);
+}
+.signup {
+
+  display: block;
+  height: 100px;
+  width: 40%;
+  margin: 20% auto;
+}
+
+.signup input {
+
+  display: block;
+  margin: 10px auto;
+}

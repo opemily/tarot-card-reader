@@ -1,0 +1,35 @@
+{
+  "name": "tarot-card-reader",
+  "version": "1.0.0",
+  "description": "An electronic tarot card reading app that will tell your fortune.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opemily/tarot-card-reader.git"
+  },
+  "keywords": [
+    "tarot",
+    "fortune-telling"
+  ],
+  "author": "Emily Oppenheimer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opemily/tarot-card-reader/issues"
+  },
+  "homepage": "https://github.com/opemily/tarot-card-reader#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.2",
+    "connect-mongo": "^1.1.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "kerberos": "0.0.18",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.6"
+  }
+}
