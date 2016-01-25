@@ -62,12 +62,12 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ### Background Images 
 
-Background - [Lyotta at Deviant Art](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
+* Main Background - [Lyotta at Deviant Art](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
 
-Registration Background - [FrostBo](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
+* Registration Background - [FrostBo](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
 
 ### Tarot Cards and Meanings
 
-[Prisma Vision Tarot](http://www.prismavisionstarot.com)
+* Special Thanks to- [Prisma Vision Tarot](http://www.prismavisionstarot.com)
 
 
