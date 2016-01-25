@@ -1,7 +1,7 @@
 {
   "name": "tarot-card-reader",
   "version": "1.0.0",
-  "description": "An electronic tarot card reading app that will tell your fortune.",
+  "description": "A tarot card reading app that will tell your fortune.",
   "main": "app.js",
   "scripts": {
     "start": "app.js"
