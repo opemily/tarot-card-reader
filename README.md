@@ -27,6 +27,8 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ![wireframes](/public/imgs/wireframe.jpg)
 
+## Link to App
+
 
 ## List of Technologies Used
 
@@ -50,13 +52,14 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 * [Mongoose](https://www.npmjs.com/package/mongoose)
 
 
-## Link to App
-
-
 ## Credits
 
+### Grid Layout
+
+* Written By Jonathan Grover- jon@flatironschool.com. Used with Permission.
+
 ### Fonts 
- * Font: DS_Mysticora Version: 1.0 -  �copyright - September 2001 - Daniel Steven Smith 
+* Font: DS_Mysticora Version: 1.0 -  �copyright - September 2001 - Daniel Steven Smith 
 
 * Mary Jane Antique- � Apostrophic Laboratories. All rights reserved. apostrophe@home.com
 
