@@ -3,9 +3,10 @@
  ![fortune teller](/imgs/misscleo.gif)
 
 ## App Description
+
 *Tell your fortune with this Tarot Card Reader*
 
-Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and Javascript!
+Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and JavaScript/jQuery!
 
 ## User Stories 
 
