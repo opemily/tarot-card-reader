@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Tarot Card Fortune Teller</title>
+  
+<link rel="stylesheet" href="css/jquery.modal.css"/>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-2.1.4.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.modal.min.js"></script>
+  
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -19,7 +24,7 @@
       <div class="login">
         <% if (username) { %>
           <div class="logged-in">
-            <span class="welcome"> Welcome, <%= username %> ! </span>
+            <span class="welcome"> Welcome, <%= username %>! </span>
             <form class="logout" action="/logout" method="GET">
               <input class="press-me" type="submit" value="Log Out">
             </form>
@@ -46,46 +51,54 @@
     </div> <!-- .query -->
   
     <div class="spread ">
-      <div id="position-5" class="card-position">
-        <a class="title" href="#">Outcome</a>
-        <p> This card suggests a possible action that can be taken to remedy the issue.</p>
-        <div class="card covered"></div>
-      </div> <!-- #position-5 -->
 
-      <div id="position-2" class="card-position">
-      
-        <a class="title" href="">Past Influences</a>
+      <div class="position">
+        <a class="title" href="#Outcome" rel="modal:open" >
+        Outcome</a>
+        <div id="Outcome" class="modal" style="display:none;">
+          <p> This card suggests a possible action that can be taken to remedy the issue.</p>
+        </div> <!-- #Outcome -->
+        <div id="position-5" class="card"></div>
+      </div> <!-- .position -->
+
+      <div class="position">
+        <a class="title" href="#Past-Influences" rel="modal:open">Past Influences</a>
+        <div id="Past-Influences" class="modal" style="display:none;">
         <p> This card represents how past has influenced the subject of your query.</p>
-        <div class="card covered"></div>
-      </div> <!-- #position-2 -->
+        </div> <!-- #Past-Influences -->
+        <div id="position-2" class="card"></div>
+      </div> <!-- .position -->
 
-      <div id="position-1" class="card-position">
-
-        <a class="title" href="#">The Present</a>
+      <div class="position">
+        <a class="title" href="#Present" rel="modal:open">The Present</a>
+        <div id="Present" class="modal" style="display:none;">
         <p> This card represents the subject you are seeking advice on. </p>
-        <div class="card covered"></div>
-      </div> <!-- #position-1 -->
+        </div> <!-- #Present -->
+        <div id="position-1" class="card"></div>
+      </div> <!-- .position -->
 
-      <div id="position-3" class="card-position">
-
-        <a class="title" href="">The Future</a>
+      <div class="position">
+        <a class="title" href="#Future" rel="modal:open">The Future</a>
+        <div id="Future" class="modal" style="display:none;">
         <p> This card offers insight into the future.</p>
-        <div class="card covered"></div>
-      </div> <!-- #position-3 -->
+        </div> <!-- #Future -->
+        <div id="position-3" class="card"></div>
+      </div> <!-- .position -->
 
-      <div id="position-4" class="card-position">
-
-        <a class="title" href="#">The Main Reason</a>
+      <div class="position">
+        <a class="title" href="#Main-Reason" rel="modal:open">The Main Reason</a>
+        <div id= "Main-Reason" class="modal" style="display:none;">
         <p> This card relates to how the issue has come to pass.</p>
-        <div class="card covered"></div>
-      </div> <!-- #position-4 -->
-  </div> <!-- .spread -->
+        </div> <!-- #Main-Reason -->
+        <div id="position-4" class="card"></div>
+      </div> <!-- .position -->
+    </div> <!-- .spread -->
 
-  <div id="card-meaning">
-    <div class="card covered"></div>
-    <h3 class="card-name"> Fake Name</h3>
-    <p class="card-definition"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem autem, officia repellendus error doloribus corporis quo, saepe soluta consectetur dolorem perferendis nostrum! Commodi eaque, vel, odio optio facere obcaecati molestiae.</p>
-  </div>  <!-- #card-meaning -->
+    <div id="card-meaning" class="modal" style="display:none;">
+      <div class="card"></div>
+      <h3 class="card-name"></h3>
+      <p class="card-definition"></p>
+    </div>  <!-- #card-meaning -->
   
   </div> <!-- .container -->
 </body>

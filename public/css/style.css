@@ -22,7 +22,6 @@
 /* ///// Header ///// */
 
 header {
-
   height: 70px;
   width: 100%;
   position: relative;
@@ -30,17 +29,14 @@ header {
 }
 
 .logo {
-
   display: inline-block;
 }
 
 .avatar {
-
   border-radius: 6px;
 }
 
 .login {
-
   display: inline-block;
   position: absolute;
   right: 0;
@@ -48,20 +44,17 @@ header {
 }
 
 .logout {
-
   display: inline-block;
   margin: 15px 35px;
 }
 /* ///// Query ///// */
 
 .query {
-
   width: 50%;
   margin: 50px auto;
 }
 
 #query {
-
   height: 40px;
   width: 75%;
   margin: 0 25px;
@@ -75,16 +68,12 @@ header {
 
 }
 
-.card-position {
+.position {
 
 }
 
 
-/* ///// Modal ///// */
-
-#card-image {
-
-}
+/* ///// Card Definition ///// */
 
 .card-name {
 
@@ -95,333 +84,529 @@ header {
 }
 
 .hidden {
-
   display: none;
 }
 
 /* ///// Cards ///// */
 
 .card {
-
   height: 258px;
   width: 150.75px;
+  background-image: url(/imgs/cards/backCard.gif);
+  background-size: contain;
+  border-radius: 15px;
 
 }
 
 .aceChalices {
   background-image: url(/imgs/cards/aceOfChalices.png);
+  background-size: 100%;
 }
 
 .twoChalices {
   background-image: url(/imgs/cards/twoOfChalices.png);
+  background-size: 100%;
 }
 
 .threeChalices {
   background-image: url(/imgs/cards/threeOfChalices.png);
+  background-size: 100%;
 }
 
 .fourChalices {
   background-image: url(/imgs/cards/fourOfChalices.png);
+  background-size: 100%;
 }
 
 .fiveChalices {
   background-image: url(/imgs/cards/fiveOfChalices.png);
+  background-size: 100%;
 }
 
 .sixChalices {
   background-image: url(/imgs/cards/sixOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .sevenChalices {
   background-image: url(/imgs/cards/sevenOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .eightChalices {
   background-image: url(/imgs/cards/eightOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .nineChalices {
   background-image: url(/imgs/cards/nineOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .tenChalices {
   background-image: url(/imgs/cards/tenOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .pageChalices {
   background-image: url(/imgs/cards/pageOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .knightChalices {
   background-image: url(/imgs/cards/knightOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .queenChalices {
   background-image: url(/imgs/cards/queenOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .kingChalices {
   background-image: url(/imgs/cards/kingOfChalices.png);
+  background-size: 100%;
+
+
+
 }
 
 .acePentacles {
   background-image: url(/imgs/cards/aceOfPentacles.png);
+  background-size: 100%;
+
+
+
 }
 
 .twoPentacles {
   background-image: url(/imgs/cards/twoOfPentacles.png);
+  background-size: 100%;
+
+
+
 }
 
 .threePentacles {
   background-image: url(/imgs/cards/threeOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .fourPentacles {
   background-image: url(/imgs/cards/fourOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .fivePentacles {
   background-image: url(/imgs/cards/fiveOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .sixPentacles {
   background-image: url(/imgs/cards/sixOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .sevenPentacles {
   background-image: url(/imgs/cards/sevenOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .eightPentacles {
   background-image: url(/imgs/cards/eightOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .ninePentacles {
   background-image: url(/imgs/cards/nineOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .tenPentacles {
   background-image: url(/imgs/cards/tenOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .pagePentacles {
   background-image: url(/imgs/cards/pageOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .knightPentacles {
   background-image: url(/imgs/cards/knightOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .queenPentacles {
   background-image: url(/imgs/cards/queenOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .kingPentacles {
   background-image: url(/imgs/cards/kingOfPentacles.png);
+  background-size: 100%;
+
+
 }
 
 .aceSwords {
   background-image: url(/imgs/cards/aceOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .twoSwords {
   background-image: url(/imgs/cards/twoOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .threeSwords {
   background-image: url(/imgs/cards/threeOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .fourSwords {
   background-image: url(/imgs/cards/fourOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .fiveSwords {
   background-image: url(/imgs/cards/fiveOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .sixSwords {
   background-image: url(/imgs/cards/sixOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .sevenSwords {
   background-image: url(/imgs/cards/sevenOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .eightSwords {
   background-image: url(/imgs/cards/eightOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .nineSwords {
   background-image: url(/imgs/cards/nineOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .tenSwords {
   background-image: url(/imgs/cards/tenOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .pageSwords {
   background-image: url(/imgs/cards/pageOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .knightSwords {
   background-image: url(/imgs/cards/knightOfSwords.png);
+  background-size: 100%;
+
+
 }
 
 .queenSwords {
   background-image: url(/imgs/cards/queenOfSwords.png);
+  background-size: 100%;
+
 }
 
 .kingSwords {
   background-image: url(/imgs/cards/kingOfSwords.png);
+  background-size: 100%;
+
 }
 
 .aceWands {
   background-image: url(/imgs/cards/aceOfWands.png);
+  background-size: 100%;
+
 }
 
 .twoWands {
   background-image: url(/imgs/cards/twoOfWands.png);
+  background-size: 100%;
+
 }
 
 .threeWands {
   background-image: url(/imgs/cards/threeOfWands.png);
+  background-size: 100%;
+
 }
 
 .fourWands {
   background-image: url(/imgs/cards/fourOfWands.png);
+  background-size: 100%;
+
 }
 
 .fiveWands {
   background-image: url(/imgs/cards/fiveOfWands.png);
+  background-size: 100%;
+
 }
 
 .sixWands {
   background-image: url(/imgs/cards/sixOfWands.png);
+  background-size: 100%;
+
 }
 
 .sevenWands {
   background-image: url(/imgs/cards/sevenOfWands.png);
+  background-size: 100%;
+
 }
 
 .eightWands {
   background-image: url(/imgs/cards/eightOfWands.png);
+  background-size: 100%;
+
 }
 
 .nineWands {
   background-image: url(/imgs/cards/nineOfWands.png);
+  background-size: 100%;
+
 }
 
 .tenWands {
   background-image: url(/imgs/cards/tenOfWands.png);
+  background-size: 100%;
+
 }
 
 .pageWands{
   background-image: url(/imgs/cards/pageOfWands.png);
+  background-size: 100%;
+
 }
 
 .knightWands {
   background-image: url(/imgs/cards/knightOfWands.png);
+  background-size: 100%;
+
 }
 
 .queenWands {
   background-image: url(/imgs/cards/queenOfWands.png);
+  background-size: 100%;
+
 }
 
 .kingWands {
   background-image: url(/imgs/cards/kingOfWands.png);
+  background-size: 100%;
+
 }
 
 .fool {
   background-image: url(/imgs/cards/theFool.png);
+  background-size: 100%;
+
 }
 
 .magician {
   background-image: url(/imgs/cards/theMagician.png);
+  background-size: 100%;
+
 }
 
 .highPriestess {
   background-image: url(/imgs/cards/theHighPriestess.png);
+  background-size: 100%;
+
 }
 
 .empress {
   background-image: url(/imgs/cards/theEmpress.png);
+  background-size: 100%;
+
 }
 
 .emperor {
   background-image: url(/imgs/cards/theEmperor.png);
+  background-size: 100%;
+
 }
 
 .hierophant {
   background-image: url(/imgs/cards/thePriest.png);
+  background-size: 100%;
+
 }
 
 .lovers {
   background-image: url(/imgs/cards/theLovers.png);
+  background-size: 100%;
+
 }
 
 .chariot {
   background-image: url(/imgs/cards/thechariot.png);
+  background-size: 100%;
+
 }
 
 .strength {
   background-image: url(/imgs/cards/thechariot.png);
+  background-size: 100%;
+
 }
 
 .hermit {
   background-image: url(/imgs/cards/theHermit.png);
+  background-size: 100%;
+
 }
 
 .wheelOfFortune {
   background-image: url(/imgs/cards/wheelOfFortune.png);
+  background-size: 100%;
+
 }
 
 .justice {
   background-image: url(/imgs/cards/justice.png);
+  background-size: 100%;
+
 }
 
 .hangedMan {
   background-image: url(/imgs/cards/theHangedMan.png);
+  background-size: 100%;
+
 }
 
 .death {
   background-image: url(/imgs/cards/death.png);
+  background-size: 100%;
+
 }
 
 .temperance {
   background-image: url(/imgs/cards/temperance.png);
+  background-size: 100%;
+
 }
 
 .devil {
   background-image: url(/imgs/cards/theDevil.png);
+  background-size: 100%;
+
 }
 
 .tower {
   background-image: url(/imgs/cards/theTower.png);
+  background-size: 100%;
+
 }
 
 .star {
   background-image: url(/imgs/cards/theStar.png);
+  background-size: 100%;
+
 }
 
 .moon {
   background-image: url(/imgs/cards/theMoon.png);
+  background-size: 100%;
+
 }
 
 .sun {
   background-image: url(/imgs/cards/theSun.png);
+  background-size: 100%;
+
 }
 
 .judgement {
   background-image: url(/imgs/cards/judgement.png);
+  background-size: 100%;
 }
 
 .world {
   background-image: url(/imgs/cards/theWorld.png);
+  background-size: 100%;
 }
 
-.covered {
-  background-image: url(/imgs/cards/backCard.gif);
-  background-size: contain;
-  border-radius: 15px;
+.strawberries {
+  background-image: url(/imgs/cards/strawberries.png);
+  background-size: 100%;
+}
 }
