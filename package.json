@@ -4,8 +4,7 @@
   "description": "An electronic tarot card reading app that will tell your fortune.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "app.js"
   },
   "repository": {
     "type": "git",
