@@ -13,7 +13,7 @@ var MongoStore  = require('connect-mongo')(session);
 
 // Instantiate an Express Server
 var app = express();
-mongoose.connect('mongodb://localhost:27017/tarot');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot' );
 
 
 // Middleware
