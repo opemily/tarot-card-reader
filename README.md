@@ -29,6 +29,8 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ## Link to App
 
+[See Full App Here!](http://gentle-wave-78183.herokuapp.com)
+
 
 ## List of Technologies Used
 
