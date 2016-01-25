@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/tarot');
-
 var Schema = mongoose.Schema;
 
 var deckSchema = new Schema({

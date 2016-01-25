@@ -17,13 +17,24 @@
         <span class="title"> Prisma Visions Tarot Reading</span>
       </div>
       <div class="login">
-        <span class="welcome"> Welcome, ! </span> 
-        <a href="/login"> Login</a>
-        <a href="/signup">Sign Up</a>
-        <form class="logout" action="/logout" method="GET">
-          <input class="press-me" type="submit" value="Log Out">
+        <% if (username) { %>
+          <div class="logged-in">
+            <span class="welcome"> Welcome, <%= username %> ! </span>
+            <form class="logout" action="/logout" method="GET">
+              <input class="press-me" type="submit" value="Log Out">
+            </form>
+          </div> <!-- .logged-in -->
+        <% } else { %>
+        <div class="logged-out">
+        <form action="/login" method="POST">
+          <input type="text" name="name" placeholder="Name"> 
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit">
         </form>
-      </div>
+        <a href="/signup">Sign Up</a>
+      </div> <!-- .logged-out -->
+      </div> <!-- .login -->
+      <% } %>
     </header>
       
     <div class="query">
@@ -34,7 +45,7 @@
       </div>
     </div> <!-- .query -->
   
-    <div class="spread hidden">
+    <div class="spread ">
       <div id="position-5" class="card-position">
         <a class="title" href="#">Outcome</a>
         <p> This card suggests a possible action that can be taken to remedy the issue.</p>
@@ -71,9 +82,9 @@
   </div> <!-- .spread -->
 
   <div id="card-meaning">
-    <img id="card-image" src="" alt="">
-    <h3 class="card-name"></h3>
-    <p class="card-definition"></p>
+    <div class="card covered"></div>
+    <h3 class="card-name"> Fake Name</h3>
+    <p class="card-definition"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem autem, officia repellendus error doloribus corporis quo, saepe soluta consectetur dolorem perferendis nostrum! Commodi eaque, vel, odio optio facere obcaecati molestiae.</p>
   </div>  <!-- #card-meaning -->
   
   </div> <!-- .container -->

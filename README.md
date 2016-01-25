@@ -44,13 +44,13 @@ Font: DS_Mysticora
 Version: 1.0 - September 2001
 �copyright - 2001 - Daniel Steven Smith 
 
+Mary Jane Antique- � Apostrophic Laboratories. All rights reserved. apostrophe@home.com
 
-Back Card - ["The World Of Tarot"](https://theworldoftarot.wordpress.com/2014/10/10/review-tarot-for-cats/)
 
 Tarot Cards & Meanings of Cards - ["Prisma Vision Tarot"](http://www.prismavisionstarot.com)
 
 Background - ["Lyotta at Deviant Art"](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
 
-Registration Background - ["YouStyleSL"](https://youstylesl.wordpress.com/2015/04/24/2200/)
+Registration Background - ["FrostBo"](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
 
 Fisher Yates Shuffle - ["Fisher Yates Shuffle"](http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
