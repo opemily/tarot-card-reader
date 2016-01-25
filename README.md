@@ -62,7 +62,7 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ### Background Images 
 
-* Main Background - [Lyotta at Deviant Art](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
+* Main Background - [OnlyGFX.com](http://www.onlygfx.com/tag/cherry/)
 
 * Registration Background - [FrostBo](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
 

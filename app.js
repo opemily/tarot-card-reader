@@ -1,7 +1,7 @@
 // Requirements
 var express     = require('express');
-var ejs         = require('ejs');
 var fs          = require('fs');
+var ejs         = require('ejs');
 var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
 var Deck        = require('./models/deck.js');
