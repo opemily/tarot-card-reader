@@ -1,5 +1,4 @@
 // Requirements
-
 var express     = require('express');
 var ejs         = require('ejs');
 var fs          = require('fs');
@@ -13,22 +12,18 @@ var MongoStore  = require('connect-mongo')(session);
 
 
 // Instantiate an Express Server
-
 var app = express();
 mongoose.connect('mongodb://localhost:27017/tarot');
 
 
 // Middleware
-
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // Sessions
-
 var mongoUrl = 'mongodb://localhost:27017/tarot';
-
 app.use(session({
     secret: 'Hello World',
     store: new MongoStore({url: mongoUrl}),
@@ -37,7 +32,6 @@ app.use(session({
 }));
 
 // Routes and Route Handlers
-
 app.get('/', function (req, res) {
     var name = req.session.name || false;
     res.render('index', {username: name});
