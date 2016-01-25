@@ -6,7 +6,7 @@
 
 *Tell your fortune with this Tarot Card Reader*
 
-Come inside the tent of the Omnipotent Emily and ask the cards your fortune with an electronic Tarot card reader built with nodejs and JavaScript/jQuery!
+Come inside the tent of the Omnipotent Emily and ask the cards your fortune with a Tarot card reader built with nodejs and JavaScript/jQuery!
 
 ## User Stories 
 
@@ -20,8 +20,8 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ### Optional User Stories (Non MVP)
 
-* A user can email the reading to himself/herself or a third party
-* A user can post the reading to facebook.
+* A user can email the reading to themselves or a third party.
+* A user can post the reading to Facebook.
 
 ## Front-End WireFrames
 ![wireframes](/public/imgs/wireframe.jpg)
@@ -55,16 +55,19 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 
 ## Credits
 
-Font: DS_Mysticora
-Version: 1.0 - September 2001
-�copyright - 2001 - Daniel Steven Smith 
+### Fonts 
+ * Font: DS_Mysticora Version: 1.0 -  �copyright - September 2001 - Daniel Steven Smith 
 
-Mary Jane Antique- � Apostrophic Laboratories. All rights reserved. apostrophe@home.com
+* Mary Jane Antique- � Apostrophic Laboratories. All rights reserved. apostrophe@home.com
 
-Tarot Cards & Meanings of Cards - [Prisma Vision Tarot](http://www.prismavisionstarot.com)
+### Background Images 
 
 Background - [Lyotta at Deviant Art](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
 
 Registration Background - [FrostBo](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
+
+### Tarot Cards and Meanings
+
+[Prisma Vision Tarot](http://www.prismavisionstarot.com)
 
 
