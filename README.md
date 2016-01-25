@@ -17,18 +17,18 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 * When user clicks on a card, the card is revealed and a modal describing the card's meaning is revealed to the user.
 * At the end of the reading a user can rate and save the reading.
 
-
 ### Optional User Stories (Non MVP)
 
 * A user can email the reading to themselves or a third party.
 * A user can post the reading to Facebook.
 
+
 ## Front-End WireFrames
+
 ![wireframes](/public/imgs/wireframe.jpg)
 
 
 ## List of Technologies Used
-
 
 * [CSS](https://www.w3.org/Style/CSS/)
 * [HTML](https://www.w3.org/html/)
@@ -37,21 +37,21 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 * [Mongo DB](https://www.mongodb.org)
 * [Node JS](https://nodejs.org/en/) 
 
-
 ### Plugins and Dependencies
 
-
 * [bcrypt](https://www.npmjs.com/package/bcrypt)
+* [body-parser](https://www.npmjs.com/package/body-parser-json)
 * [connect-mongo](https://www.npmjs.com/package/connect-mongo)
+* [ejs](https://www.npmjs.com/package/ejs)
+* [express](https://www.npmjs.com/package/express)
 * [express-session](https://www.npmjs.com/package/express-session)
 * [Fisher Yates Shuffle](http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 * [jquery-modal](https://www.npmjs.com/package/jquery-modal)
 * [Mongoose](https://www.npmjs.com/package/mongoose)
 
 
-
-
 ## Link to App
+
 
 ## Credits
 
@@ -69,5 +69,3 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 ### Tarot Cards and Meanings
 
 * Special Thanks to- [Prisma Vision Tarot](http://www.prismavisionstarot.com)
-
-
