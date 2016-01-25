@@ -1,6 +1,6 @@
 # Tarot Card Reader
 
- ![fortune teller](/imgs/misscleo.gif)
+ ![miss Cleo](http://gph.is/1cclbs1)
 
 ## App Description
 
@@ -24,28 +24,29 @@ Come inside the tent of the Omnipotent Emily and ask the cards your fortune with
 * A user can post the reading to facebook.
 
 ## Front-End WireFrames
-![wireframes](/imgs/wireframe.jpg)
+![wireframes](/public/imgs/wireframe.jpg)
 
 
 ## List of Technologies Used
 
 
-* ["CSS"](https://www.w3.org/Style/CSS/)
-* ["HTML"](https://www.w3.org/html/)
-* ["JavaScript"](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* ["jQuery"](https://jquery.com)
-* ["Mongo DB"](https://www.mongodb.org)
-* ["Node JS"](https://nodejs.org/en/) 
+* [CSS](https://www.w3.org/Style/CSS/)
+* [HTML](https://www.w3.org/html/)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [jQuery](https://jquery.com)
+* [Mongo DB](https://www.mongodb.org)
+* [Node JS](https://nodejs.org/en/) 
 
 
 ### Plugins and Dependencies
 
 
-* ["bcrypt"](https://www.npmjs.com/package/bcrypt)
-* ["connect-mongo"](https://www.npmjs.com/package/connect-mongo)
-* ["express-session"](https://www.npmjs.com/package/express-session)
-* ["jquery-modal"](https://www.npmjs.com/package/jquery-modal)
-* ["Mongoose"](https://www.npmjs.com/package/mongoose)
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
+* [connect-mongo](https://www.npmjs.com/package/connect-mongo)
+* [express-session](https://www.npmjs.com/package/express-session)
+* [Fisher Yates Shuffle](http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+* [jquery-modal](https://www.npmjs.com/package/jquery-modal)
+* [Mongoose](https://www.npmjs.com/package/mongoose)
 
 
 
@@ -60,10 +61,10 @@ Version: 1.0 - September 2001
 
 Mary Jane Antique- � Apostrophic Laboratories. All rights reserved. apostrophe@home.com
 
-Tarot Cards & Meanings of Cards - ["Prisma Vision Tarot"](http://www.prismavisionstarot.com)
+Tarot Cards & Meanings of Cards - [Prisma Vision Tarot](http://www.prismavisionstarot.com)
 
-Background - ["Lyotta at Deviant Art"](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
+Background - [Lyotta at Deviant Art](http://lyotta.deviantart.com/art/Seamless-red-wood-texture-342183779)
 
-Registration Background - ["FrostBo"](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
+Registration Background - [FrostBo](http://frostbo.deviantart.com/art/Celestial-Background-50-333127301)
 
-Fisher Yates Shuffle - ["Fisher Yates Shuffle"](http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+
