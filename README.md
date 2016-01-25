@@ -1,6 +1,6 @@
 # Tarot Card Reader
 
- ![miss Cleo](http://gph.is/1cclbs1)
+ ![miss Cleo](http://i.giphy.com/bEhlDZAHPMeoE.gif)
 
 ## App Description
 
