@@ -13,7 +13,7 @@ var MongoStore  = require('connect-mongo')(session);
 
 // Instantiate an Express Server
 var app = express();
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot' );
+mongoose.connect( process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot');
 
 
 // Middleware
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // Sessions
-var mongoUrl = 'mongodb://localhost:27017/tarot';
+var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot';
 app.use(session({
     secret: 'Hello World',
     store: new MongoStore({url: mongoUrl}),
