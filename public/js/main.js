@@ -2,7 +2,7 @@ console.log("Saul B. Goodman!");
 
 $(function () {
     var tarotDeck = [];
-    var cardPosition = ["#position-1", "#position-2","#position-3", "#position-4", "#position-5"];
+    var cardPosition = ['#position-1', '#position-2', '#position-3', '#position-4', '#position-5'];
 
     // Fisher-Yates Shuffle
     var shuffle = function (array) {
@@ -35,16 +35,21 @@ $(function () {
     getCards();
 
     // Clicking on a card will reveal the modal with the card image, name, and description.
-    var createModal = function () {
+    var createModal = function (e) {
         // Grab card position id
-        $('.card').click(function () {
-            $(this).attr('id');
+        $(e.target).click(function (e) {
+            var cardIndex = cardPosition.indexOf("#" + $(e.target).attr('id'));
+        // Reveal Modal with card image, name and definition.
+            $('#card-meaning').modal();
+            $('#card').attr('class', 'card ' + tarotDeck[cardIndex].cssClass);
+            $('#card-name').html(tarotDeck[cardIndex].name);
+            $('#definition').html(tarotDeck[cardIndex].def);
         });
     };
 
 
     // Clicking the shuffle button will post the question, hide the question form, shuffle the deck, and reveal the cards
-    $('#shuffle').on('click', function () {
+    $('#shuffle').on('click', function (e) {
         //Post Question
         var query = $('#query').val();
         $('#display-query').text(query);
@@ -54,8 +59,8 @@ $(function () {
         shuffle(tarotDeck);
         // Reveal the cards
         for (var i=0; i < cardPosition.length; i++){
-            $(cardPosition[i]).addClass(tarotDeck[i].cssClass);
-        }
+            $(cardPosition[i]).addClass(tarotDeck[i].cssClass).on('click', createModal);
+                }
     });
 
 });
