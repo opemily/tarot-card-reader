@@ -34,22 +34,8 @@ $(function () {
 
     getCards();
 
-    // Clicking on a card will reveal the modal with the card image, name, and description.
-    var createModal = function (e) {
-        // Grab card position id
-        $(e.target).click(function (e) {
-            var cardIndex = cardPosition.indexOf("#" + $(e.target).attr('id'));
-        // Reveal Modal with card image, name and definition.
-            $('#card-meaning').modal();
-            $('#card').attr('class', 'card ' + tarotDeck[cardIndex].cssClass);
-            $('#card-name').html(tarotDeck[cardIndex].name);
-            $('#definition').html(tarotDeck[cardIndex].def);
-        });
-    };
-
-
-    // Clicking the shuffle button will post the question, hide the question form, shuffle the deck, and reveal the cards
-    $('#shuffle').on('click', function (e) {
+    //Function that occurs when shuffling
+    var shuffleDeck = function (){
         //Post Question
         var query = $('#query').val();
         $('#display-query').text(query);
@@ -61,6 +47,31 @@ $(function () {
         for (var i=0; i < cardPosition.length; i++){
             $(cardPosition[i]).addClass(tarotDeck[i].cssClass).on('click', createModal);
                 }
+    }
+
+    // Clicking on a card will reveal the modal with the card image, name, and description.
+    var createModal = function (e) {
+        // Grab card position id
+        $(e.target).on('click' || event.keyCode == 13, function (e) {
+            var cardIndex = cardPosition.indexOf("#" + $(e.target).attr('id'));
+        // Reveal Modal with card image, name and definition.
+            $('#card-meaning').modal();
+            $('#card').attr('class', 'card ' + tarotDeck[cardIndex].cssClass);
+            $('#card-name').html(tarotDeck[cardIndex].name);
+            $('#definition').html(tarotDeck[cardIndex].def);
+        });
+    };
+
+
+    // Clicking the shuffle button or keypress will trigger the shuffleDeck function
+    $('#shuffle').on('click', function (e) {
+        shuffleDeck();
+    });
+
+    $('#query').on('keypress', function () {
+        if (event.keyCode == 13){
+            shuffleDeck();
+        }
     });
 
 });

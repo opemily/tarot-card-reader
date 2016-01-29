@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Prisma Visions Tarot App</title>
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0, minimum-scale= 1.0, maximum-scale=1.0">
   <link rel="shortcut icon" href="/imgs/avatar.png">
   <link rel="apple-touch-icon-precomposed" href="imgs/avatar.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="css/jquery.modal.css"/>
   <link rel="stylesheet" href="css/style.css">
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.modal.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
 
-  <div class="container">
+  <div class="">
 
     <header>
       <div class="col-4 logo">
         <img class="avatar" src="/imgs/avatar.png" alt="logo">
-        <span class="title"> Prisma Visions Tarot Reading</span>
+        <p class="title"> Prisma Visions Tarot Reading</p>
       </div> <!-- .logo -->
 
-      <div class="col-4 dashboard">
+      <div class="col-5 dashboard">
         <% if (username) { %>
           <div class="col-12"> <!-- logged-in div -->
             <span class="welcome"> Welcome, <%= username %>! </span>
@@ -68,7 +71,7 @@
             <p> This card suggests a possible action that can be taken to remedy the issue.</p>
           </div> <!-- #Outcome -->
           <div id="position-5" class="card"></div>
-          <a class="title" href="#Outcome" rel="modal:open" >
+          <a class="definition" href="#Outcome" rel="modal:open" >
           Outcome</a>
         </div> <!-- .position -->
 
@@ -82,7 +85,7 @@
             <p> This card represents how past has influenced the subject of your query.</p>
           </div> <!-- #Past-Influences -->
           <div id="position-2" class="card"></div>
-          <a class="title" href="#Past-Influences" rel="modal:open">Past Influences</a>
+          <a class="definition" href="#Past-Influences" rel="modal:open">Past Influences</a>
         </div> <!-- .position -->
 
         <div class="col-4 position">
@@ -90,7 +93,7 @@
             <p> This card represents the subject you are seeking advice on. </p>
           </div> <!-- #Present -->
           <div id="position-1" class="card"></div>
-          <a class="title" href="#Present" rel="modal:open">The Present</a>
+          <a class="definition" href="#Present" rel="modal:open">The Present</a>
         </div> <!-- .position -->
 
         <div class="col-4 position">
@@ -98,7 +101,7 @@
             <p> This card offers insight into the future.</p>
           </div> <!-- #Future -->
           <div id="position-3" class="card"></div>
-          <a class="title" href="#Future" rel="modal:open">The Future</a>
+          <a class="definition" href="#Future" rel="modal:open">The Future</a>
         </div> <!-- .position -->
       </div> <!-- .row -->
 
@@ -110,7 +113,7 @@
             <p> This card relates to how the issue has come to pass.</p>
           </div> <!-- #Main-Reason -->
           <div id="position-4" class="card"></div>
-          <a class="title" href="#Main-Reason" rel="modal:open">The Main Reason</a>
+          <a class="definition" href="#Main-Reason" rel="modal:open">The Main Reason</a>
         </div> <!-- .position -->
 
         <div class="col-4"></div>

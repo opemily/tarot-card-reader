@@ -10,7 +10,7 @@ body {
 
   /*background: url("/imgs/cherry-wood-texture-3.jpg");
   background-size: cover;*/
-  margin: 0 auto;
+  margin: 0;
 }
 
 /*.press-me {
@@ -19,6 +19,7 @@ body {
 }*/
 
 /*///// LAYOUT /////*/
+
 
 * {
   box-sizing: border-box;
@@ -69,7 +70,9 @@ body {
 
 /* ///// Header ///// */
 
+
 header {
+  position: relative;
   height: 75px;
   width: 100%;
   background-color: rgba(36,0,0,.3);
@@ -78,6 +81,13 @@ header {
 .logo {
   padding-top: 2px;
   padding-left: 5px;
+}
+
+.title {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 10px 30px 10px;
 }
 
 .dashboard {
@@ -92,11 +102,13 @@ header {
 .login {
   display: inline-block;
   margin: 0, 10px;
+  padding-right: 10px;
 }
 
 .history {
   margin-left: 10%;
 }
+
 .logout {
   display: inline-block;
   float: right;
@@ -106,10 +118,9 @@ header {
 /* ///// Query ///// */
 
 
-
 #query {
   height: 40px;
-  width: 75%;
+  width: 60%;
   margin: 15px auto;
   border: none;
   border-radius: 6px;
@@ -121,6 +132,7 @@ header {
 }
 
 /* ///// Spread ///// */
+
 
 .spread {
 
@@ -137,9 +149,8 @@ text-align: center;
   width: 113.06px;
 }
 
-.title {
-}
 /* ///// Card Definition ///// */
+
 
 #card-name {
 
@@ -155,6 +166,7 @@ text-align: center;
 
 
 /* ///// Cards ///// */
+
 
 .card {
   height: 258px;
@@ -190,7 +202,7 @@ text-align: center;
 }
 
 .hierophant {
-  background-image: url(/imgs/cards/thePriest.png);
+  background-image: url(/imgs/cards/theHierophant.png);
   background-size: 100%;
 }
 
@@ -200,7 +212,7 @@ text-align: center;
 }
 
 .chariot {
-  background-image: url(/imgs/cards/thechariot.png);
+  background-image: url(/imgs/cards/theChariot.png);
   background-size: 100%;
 }
 
