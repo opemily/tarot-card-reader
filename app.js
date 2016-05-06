@@ -14,7 +14,7 @@ var MongoStore  = require('connect-mongo')(session);
 
 // Instantiate an Express Server
 var app = express();
-mongoose.connect( process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tarot');
 
 
 // Middleware
@@ -33,9 +33,11 @@ app.use(session({
 }));
 
 // Routes and Route Handlers
+
 app.get('/', function (req, res) {
     var name = req.session.name || false;
-    res.render('index', {username: name});
+    var userid = req.session._id || false;
+    res.render('index', {username: name, userid: userid});
 });
 
 app.get('/shuffle', function (req, res) {
@@ -69,7 +71,6 @@ app.post('/login', function (req, res) {
         bcrypt.compare(password, hash, function (err, result) {
             if (result) {
                 req.session.name = user.name;
-                req.session.userid = user._id;
                 res.redirect('/');
                 console.log("Logged in as " + user.name);
             } else {
@@ -93,16 +94,16 @@ app.get('/logout', function (req, res) {
 app.listen(process.env.PORT || 3000);
 
 
-app.post('/readings', function (req, res) {
-    console.log('readings :: ', req.body);
-    // var name = req.body.name;
-    // var password = req.body.password;
-    // var passwordConfirmation = req.body.password_confirmation;
-    // if (password === passwordConfirmation) {
-    //     var encryptPassword = bcrypt.hashSync(req.body.password, 8);
-    //     var user = new User({name: name, password: encryptPassword});
-    //     user.save(function () {
-    //         res.redirect('/');
-    //     });
-    // }
-});
+// app.post('/readings', function (req, res) {
+//     console.log('readings :: ', req.body);
+//     // var name = req.body.name;
+//     // var password = req.body.password;
+//     // var passwordConfirmation = req.body.password_confirmation;
+//     // if (password === passwordConfirmation) {
+//     //     var encryptPassword = bcrypt.hashSync(req.body.password, 8);
+//     //     var user = new User({name: name, password: encryptPassword});
+//     //     user.save(function () {
+//     //         res.redirect('/');
+//     //     });
+//     // }
+// });

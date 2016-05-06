@@ -1,8 +1,7 @@
-console.log("Saul B. Goodman!");
-
 $(function () {
     var tarotDeck = [];
     var cardPosition = ['#position-1', '#position-2', '#position-3', '#position-4', '#position-5'];
+    var userRating;
 
     // Fisher-Yates Shuffle
     var shuffle = function (array) {
@@ -48,6 +47,10 @@ $(function () {
         for (var i=0; i < cardPosition.length; i++){
             $(cardPosition[i]).addClass(tarotDeck[i].cssClass).on('click', createModal);
                 }
+        // Initialize Rating
+        $("#rateYo").rateYo().on('click', function(){
+            userRating= $("#rateYo").rateYo("rating");
+        });
     }
 
     // Clicking on a card will reveal the modal with the card image, name, and description.
@@ -63,30 +66,29 @@ $(function () {
         });
     };
 
-    var saveReading = function(){ 
-        var data = {};
-        var currentHand = [];
-        var currentQuestion = $('#display-query').text();
-        for (var i = 0, length = 5; i<length; i++){
-            currentHand.push(tarotDeck[i]);
-        }
+    // var saveReading = function(){ 
+    //     var data = {};
+    //     var currentHand = [];
+    //     var currentQuestion = $('#display-query').text();
+    //     for (var i = 0, length = 5; i<length; i++){
+    //         currentHand.push(tarotDeck[i]);
+    //     }
 
-        data =  {
-                'date': new Date(),
-                'question': currentQuestion,
-                'hand': currentHand
-            };
+    //     data =  {
+    //             'date': new Date(),
+    //             'question': currentQuestion,
+    //             'hand': currentHand
+    //         };
 
-        console.log(data);
-         $.ajax({
-            method: 'POST',
-            url: "/readings",
-            dataType: 'json',
-            data: data
-        }).done(function () {
-            
-        });
-    };
+    //     console.log(data);
+    //      $.ajax({
+    //         method: 'POST',
+    //         url: "/readings",
+    //         dataType: 'json',
+    //         data: data
+    //     }).done(function () {  
+    //     });
+    // };
 
 
     // Clicking the shuffle button or keypress will trigger the shuffleDeck function
@@ -100,6 +102,7 @@ $(function () {
         }
     });
 
-    $("#save-reading").on('click', saveReading);
+    // $("#save-reading").on('click', saveReading);
+
 
 });
