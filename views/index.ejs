@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <div class="">
+  <div class="container">
 
     <header>
       <div class="col-4 logo">
@@ -34,7 +34,7 @@
             </form>
           </div> <!-- logged-in div -->
         <% } else { %>
-          <div class=".col-12"> <!-- logged-out div -->
+          <div class="col-12"> <!-- logged-out div -->
             <form action="/login" method="POST" class="login">
               <input type="text" name="name" placeholder="Name"> 
               <input type="password" name="password" placeholder="Password">
@@ -42,92 +42,104 @@
             </form>
             <a href="/signup" class="signup">Sign Up</a>
           </div> <!-- logged-out div -->
-        </div> <!-- .dashboard -->
-      <% } %>
+        <% } %>
+      </div> <!-- .dashboard -->
 
     </header> <!-- header -->
-
-    <div class="row">  
-      <div class="col-4"></div>
-
-      <div class="col-4"> <!-- Question Box -->
-        <p id="display-query"></p>
-        <div id="submit-query">
-          <input id="query" type="text" placeholder="Ask your question to the cards... ">
-          <button id="shuffle"> Shuffle Deck </button>
-        </div> <!-- #submit query -->
-      </div> <!-- Question Box -->
-
-      <div class="col-4"></div>
-    </div> <!-- .row -->
-  
-    <div class="spread">
-
-      <div class="row"> <!-- Top Row -->
+    <form action="/save-reading" method="post"></form>
+      <div class="row query">  
         <div class="col-4"></div>
 
-        <div class="col-4 position">
-          <div id="Outcome" class="modal" style="display:none;">
-            <p> This card suggests a possible action that can be taken to remedy the issue.</p>
-          </div> <!-- #Outcome -->
-          <div id="position-5" class="card"></div>
-          <a class="definition" href="#Outcome" rel="modal:open" >
-          Outcome</a>
-        </div> <!-- .position -->
+        <div class="col-4"> <!-- Question Box -->
+          <p id="display-query"></p>
 
-        <div class="col-4"></div>
-      </div> <!-- .row -->
+          <div id="submit-query">
+            <input id="query" type="text" placeholder="Ask your question to the cards... ">
+            <button id="shuffle"> Shuffle Deck </button>
 
-      <div class="row"> <!-- Middle Row -->
+          </div> <!-- #submit query -->
 
-        <div class="col-4 position">
-          <div id="Past-Influences" class="modal" style="display:none;">
-            <p> This card represents how past has influenced the subject of your query.</p>
-          </div> <!-- #Past-Influences -->
-          <div id="position-2" class="card"></div>
-          <a class="definition" href="#Past-Influences" rel="modal:open">Past Influences</a>
-        </div> <!-- .position -->
+          <div class="col-4"></div>
 
-        <div class="col-4 position">
-          <div id="Present" class="modal" style="display:none;">
-            <p> This card represents the subject you are seeking advice on. </p>
-          </div> <!-- #Present -->
-          <div id="position-1" class="card"></div>
-          <a class="definition" href="#Present" rel="modal:open">The Present</a>
-        </div> <!-- .position -->
+        </div> <!-- Question Box -->
+      </div> <!-- .query -->
 
-        <div class="col-4 position">
-          <div id="Future" class="modal" style="display:none;">
-            <p> This card offers insight into the future.</p>
-          </div> <!-- #Future -->
-          <div id="position-3" class="card"></div>
-          <a class="definition" href="#Future" rel="modal:open">The Future</a>
-        </div> <!-- .position -->
-      </div> <!-- .row -->
+      <div class="spread">
+        <div class="row"> <!-- Top Row -->
+          <div class="col-4"></div>
 
-      <div class="row"> <!-- Bottom Row --> 
-        <div class="col-4"></div> 
+          <div class="col-4 position">
+            <div id="Outcome" class="modal" style="display:none;">
+              <p> This card suggests a possible action that can be taken to remedy the issue.</p>
+            </div> <!-- #Outcome .modal -->
 
-        <div class="col-4 position">
-          <div id= "Main-Reason" class="modal" style="display:none;">
-            <p> This card relates to how the issue has come to pass.</p>
-          </div> <!-- #Main-Reason -->
-          <div id="position-4" class="card"></div>
-          <a class="definition" href="#Main-Reason" rel="modal:open">The Main Reason</a>
-        </div> <!-- .position -->
+            <div id="position-5" class="card"></div>
+            <a class="definition" href="#Outcome" rel="modal:open" > Outcome </a>
 
-        <div class="col-4"></div>
-      </div> <!-- .row -->
+          </div> <!-- .position -->
 
+          <div class="col-4"></div>
 
-    </div> <!-- .spread -->
+        </div> <!-- .row Top-->
 
-    <div id="card-meaning" class="modal" style="display:none;">
-      <div id="card" class="card"></div>
-      <h3 id="card-name"></h3>
-      <p id="definition"></p>
+        <div class="row"> <!-- Middle Row -->
 
-    </div>  <!-- #card-meaning -->
+          <div class="col-4 position">
+            <div id="Past-Influences" class="modal" style="display:none;">
+              <p> This card represents how past has influenced the subject of your query.</p>
+            </div> <!-- #Past-Influences .modal -->
+
+            <div id="position-2" class="card"></div>
+            <a class="definition" href="#Past-Influences" rel="modal:open"> Past Influences </a>
+
+          </div> <!-- .position -->
+
+          <div class="col-4 position">
+            <div id="Present" class="modal" style="display:none;">
+              <p> This card represents the subject you are seeking advice on. </p>
+            </div> <!-- #Present .modal -->
+
+            <div id="position-1" class="card"></div>
+            <a class="definition" href="#Present" rel="modal:open">The Present</a>
+
+          </div> <!-- .position -->
+
+          <div class="col-4 position">
+            <div id="Future" class="modal" style="display:none;">
+              <p> This card offers insight into the future.</p>
+            </div> <!-- #Future .modal -->
+
+            <div id="position-3" class="card"></div>
+            <a class="definition" href="#Future" rel="modal:open">The Future</a>
+            
+          </div> <!-- .position -->
+          
+        </div> <!-- .row Middle-->
+
+        <div class="row"> <!-- Bottom Row --> 
+          <div class="col-4"></div> 
+
+          <div class="col-4 position">
+            <div id= "Main-Reason" class="modal" style="display:none;">
+              <p> This card relates to how the issue has come to pass.</p>
+            </div> <!-- #Main-Reason .modal -->
+            
+              <div id="position-4" class="card"></div>
+              <a class="definition" href="#Main-Reason" rel="modal:open">The Main Reason</a>
+
+            </div> <!-- .position -->
+
+            <div class="col-4"></div>
+
+        </div> <!-- .row Bottom -->
+
+      </div> <!-- .spread -->
+
+      <div id="card-meaning" class="modal" style="display:none;">
+        <div id="card" class="card"></div>
+        <h3 id="card-name"></h3>
+        <p id="definition"></p>
+      </div>  <!-- #card-meaning -->
   
   </div> <!-- .container -->
 </body>

@@ -5,6 +5,7 @@ var ejs         = require('ejs');
 var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
 var Deck        = require('./models/deck.js');
+var Reading     = require('./models/reading.js');
 var User        = require('./models/user.js');
 var session     = require('express-session');
 var bcrypt      = require('bcrypt');
@@ -68,6 +69,7 @@ app.post('/login', function (req, res) {
         bcrypt.compare(password, hash, function (err, result) {
             if (result) {
                 req.session.name = user.name;
+                req.session.userid = user._id;
                 res.redirect('/');
                 console.log("Logged in as " + user.name);
             } else {
@@ -78,7 +80,7 @@ app.post('/login', function (req, res) {
 });
 
 app.get('/user', function (req, res) {
-    res.render('user');
+    res.render('past-readings');
 });
 
 app.get('/logout', function (req, res) {
@@ -89,3 +91,18 @@ app.get('/logout', function (req, res) {
 
 
 app.listen(process.env.PORT || 3000);
+
+
+app.post('/readings', function (req, res) {
+    console.log('readings :: ', req.body);
+    // var name = req.body.name;
+    // var password = req.body.password;
+    // var passwordConfirmation = req.body.password_confirmation;
+    // if (password === passwordConfirmation) {
+    //     var encryptPassword = bcrypt.hashSync(req.body.password, 8);
+    //     var user = new User({name: name, password: encryptPassword});
+    //     user.save(function () {
+    //         res.redirect('/');
+    //     });
+    // }
+});

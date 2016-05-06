@@ -41,6 +41,7 @@ $(function () {
         $('#display-query').text(query);
         // Hide the question input
         $('#submit-query').addClass('hidden');
+        $('#save-reading').removeClass('hidden');
         //Shuffle the Deck
         shuffle(tarotDeck);
         // Reveal the cards
@@ -62,6 +63,31 @@ $(function () {
         });
     };
 
+    var saveReading = function(){ 
+        var data = {};
+        var currentHand = [];
+        var currentQuestion = $('#display-query').text();
+        for (var i = 0, length = 5; i<length; i++){
+            currentHand.push(tarotDeck[i]);
+        }
+
+        data =  {
+                'date': new Date(),
+                'question': currentQuestion,
+                'hand': currentHand
+            };
+
+        console.log(data);
+         $.ajax({
+            method: 'POST',
+            url: "/readings",
+            dataType: 'json',
+            data: data
+        }).done(function () {
+            
+        });
+    };
+
 
     // Clicking the shuffle button or keypress will trigger the shuffleDeck function
     $('#shuffle').on('click', function (e) {
@@ -73,5 +99,7 @@ $(function () {
             shuffleDeck();
         }
     });
+
+    $("#save-reading").on('click', saveReading);
 
 });
