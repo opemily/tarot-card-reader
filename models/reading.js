@@ -3,9 +3,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var readingSchema = new Schema({
-   user_id: String,
+   user_id: {type: Schema.Types.ObjectId, ref: 'User'},
    question: String,
-   hand: Array,
+   cards: Array,
    rating: String
 });
 

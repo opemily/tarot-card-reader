@@ -66,29 +66,31 @@ $(function () {
         });
     };
 
-    // var saveReading = function(){ 
-    //     var data = {};
-    //     var currentHand = [];
-    //     var currentQuestion = $('#display-query').text();
-    //     for (var i = 0, length = 5; i<length; i++){
-    //         currentHand.push(tarotDeck[i]);
-    //     }
+    var saveReading = function(){
+        var data = {};
+        var currentHand = [];
+        var currentQuestion = $('#display-query').text();
+        for (var i = 0, length = 5; i<length; i++){
+            currentHand.push(tarotDeck[i]);
+        };
+        console.log(currentHand);
 
-    //     data =  {
-    //             'date': new Date(),
-    //             'question': currentQuestion,
-    //             'hand': currentHand
-    //         };
+        data =  {
+                'date': new Date(),
+                'question': currentQuestion,
+                'cards': currentHand,
+                'rating': userRating
+            };
 
-    //     console.log(data);
-    //      $.ajax({
-    //         method: 'POST',
-    //         url: "/readings",
-    //         dataType: 'json',
-    //         data: data
-    //     }).done(function () {  
-    //     });
-    // };
+        console.log(data);
+         $.ajax({
+            method: 'POST',
+            url: "/readings",
+            dataType: 'json',
+            data: data
+        }).done(function () {
+        });
+    };
 
 
     // Clicking the shuffle button or keypress will trigger the shuffleDeck function
@@ -102,7 +104,7 @@ $(function () {
         }
     });
 
-    // $("#save-reading").on('click', saveReading);
+    $("#save-reading").on('click', saveReading);
 
 
 });
