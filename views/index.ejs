@@ -15,11 +15,10 @@
   <script src="js/jquery.modal.min.js"></script>
   <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
+
 </head>
 <body>
-
   <div class="container">
-
     <header>
       <div class="col-4 logo">
         <img class="avatar" src="/imgs/avatar.png" alt="logo">
@@ -45,18 +44,19 @@
             <a href="/signup" class="signup">Sign Up</a>
           </div> <!-- logged-out div -->
         <% } %>
+
       </div> <!-- .dashboard -->
 
     </header> <!-- header -->
     <form action="/save-reading" method="post"></form>
-      <div class="row query">  
+      <div class="row question">  
         <div class="col-4"></div>
 
         <div class="col-4"> <!-- Question Box -->
-          <p id="display-query"></p>
+          <p id="display-question"></p>
 
-          <div id="submit-query">
-            <input id="query" type="text" placeholder="Ask your question to the cards... ">
+          <div id="submit-question">
+            <input id="question" type="text" placeholder="Ask your question to the cards... ">
             <button id="shuffle"> Shuffle Deck </button>
 
           </div> <!-- #submit query -->
@@ -64,7 +64,7 @@
           <div class="col-4"></div>
 
         </div> <!-- Question Box -->
-      </div> <!-- .query -->
+      </div> <!-- .question -->
 
       <div class="spread">
         <div class="row"> <!-- Top Row -->
@@ -135,8 +135,12 @@
 
         </div> <!-- .row Bottom -->
 
-        <div id="rateYo"> </div>
-        <button id="save-reading"> Save Yo Reading</button>
+        <% if(username) {%>
+          <div id="saver" class="hidden">
+            <div id="rateYo"> </div>
+            <button id="save-reading"> Save Reading</button>
+          </div>
+        <% } %>
 
       </div> <!-- .spread -->
 

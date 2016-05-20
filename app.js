@@ -73,8 +73,6 @@ app.post('/login', function (req, res) {
                 req.session.name = user.name;
                 req.session._id = user._id.toString();
                 res.redirect('/');
-                console.log("Logged in as " + user.name);
-                console.log(req.session);
             } else {
                 res.redirect('/');
             }
@@ -88,33 +86,18 @@ app.get('/user', function (req, res) {
 
 app.get('/logout', function (req, res) {
     req.session.name = null;
-    console.log("logout");
     res.redirect('/');
 });
 
+app.post('/readings', function (req, res) {
+    var readingData = { user_id: mongoose.Types.ObjectId(req.session._id),
+        question: req.body.question,
+        cards: req.body.cards,
+        rating: req.body.rating}
+    var reading = new Reading(readingData);
+    reading.save(function (err, result) {
+        console.log(err);
+    });
+});
 
 app.listen(process.env.PORT || 3000);
-
-
-app.post('/readings', function (req, res) {
-    console.log('readings :: ', req.body);
-    console.log(req.session._id);
-    var readingData = { user_id: mongoose.Types.ObjectId(req.session._id),
-   question: req.body.question,
-   cards: req.body.cards,
-   rating: req.body.rating}
-   var reading = new Reading(readingData);
-   reading.save(function (err, result) {
-        console.log(err, result);
-    });
-    // var name = req.body.name;
-    // var password = req.body.password;
-    // var passwordConfirmation = req.body.password_confirmation;
-    // if (password === passwordConfirmation) {
-    //     var encryptPassword = bcrypt.hashSync(req.body.password, 8);
-    //     var user = new User({name: name, password: encryptPassword});
-    //     user.save(function () {
-    //         res.redirect('/');
-    //     });
-    // }
-});
