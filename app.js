@@ -93,7 +93,7 @@ app.post('/readings', function (req, res) {
     var readingData = { user_id: mongoose.Types.ObjectId(req.session._id),
         question: req.body.question,
         cards: req.body.cards,
-        rating: req.body.rating}
+        rating: req.body.rating};
     var reading = new Reading(readingData);
     reading.save(function (err, result) {
         console.log(err);

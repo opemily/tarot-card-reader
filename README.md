@@ -1,3 +1,5 @@
+* This project has been refactored in Angular JS. No further updates will be made on this repository but please see [Prisma Visions Tarot](https://github.com/opemily/Prisma_Visions_Tarot) for the rebuilt active version. *
+
 # Tarot Card Reader
 
  ![miss Cleo](http://i.giphy.com/bEhlDZAHPMeoE.gif)
